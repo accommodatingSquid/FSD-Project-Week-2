@@ -1,0 +1,70 @@
+
+body{
+    font-family: system-ui;
+}
+.herocard-title{
+    text-align:center;
+}
+.topbar{
+    display: flex;
+    box-shadow: 0px 1px lightgrey;
+    height: 80px;
+    align-content:center;
+    align-items: center;
+
+}
+.companyheader{
+    color:blue;
+    font-family: system-ui;
+    flex: 8;
+    font-weight: 800;
+}
+.nav{
+    flex: 1;
+    text-align: center;
+}
+.topcard{
+    padding-top: 10px;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2fr 1fr 1fr;
+    grid-template-areas: 
+    "title image"
+    "paragraph image"
+    "buttons image";
+}
+.tc-title{
+    grid-area:title;
+    font-size:xx-large;
+    margin: 10px;
+}
+.tc-para{
+    grid-area:paragraph;
+    color:grey;
+    margin: 10px;
+}
+.tc-buttons{
+    display: flex;
+    grid-area:buttons;
+
+}
+.tc-started{
+    background-color:blue;
+    border: 2px solid blue;
+    color: white;
+    font-weight: 900;
+    font-family: system-ui;
+    margin:20px;
+}
+.tc-learn{
+    background-color:white;
+    border: 2px solid blue;
+    color: blue;
+    font-weight: 900;
+    font-family: system-ui;
+    margin:20px;
+}
+.tc-image{
+    grid-area:image;
+    margin: 10px;
+}
